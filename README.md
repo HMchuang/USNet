@@ -54,7 +54,11 @@ You can create a conda environment and install the required packages by running:
 $ conda create -n usnet python=3.7
 $ pip install -r requirements.txt
 ```
-
+**For NVIDIA RTX3080 GPU**
+```
+$ conda create -n usnet python=3.7
+$ conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
+```
 
 ## Training
 
